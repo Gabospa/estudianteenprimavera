@@ -1,0 +1,25 @@
+# .gitignore
+
+# Virtual environment
+venv/
+
+# Python
+*.pyc
+__pycache__/
+
+# Django
+*.log
+*.pot
+*.pyc
+.Python
+db.sqlite3
+media
+
+# Docker
+*.log
+*.pid
+*.env
+*.env.*
+
+# System files
+.DS_Store
