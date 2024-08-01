@@ -1,7 +1,7 @@
 from rest_framework import generics
 from django.shortcuts import render
-from models import User, Post, Comment
-from serializers import UserSerializer, PostSerializer, CommentSerializer
+from .models import User, Post, Comment
+from .serializers import UserSerializer, PostSerializer, CommentSerializer
 
 class UserList(generics.ListCreateAPIView):
     queryset = User.objects.all()

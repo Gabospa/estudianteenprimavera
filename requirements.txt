@@ -2,3 +2,5 @@ Django>=3.2
 djangorestframework
 psycopg2-binary
 django-cors-headers
+django-extensions
+ipython

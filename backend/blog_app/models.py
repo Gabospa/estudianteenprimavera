@@ -4,7 +4,7 @@ from django.contrib.auth.models import AbstractUser
 from django.utils import timezone
 
 class User(AbstractUser):
-    id = models.UUIDField(primary_key=True, default=uuid.uuid)
+    id = models.UUIDField(primary_key=True, default=uuid.uuid4)
     bio = models.TextField(blank=True, null=True)
     country = models.CharField(blank=True, null=True)
 
@@ -13,7 +13,7 @@ class User(AbstractUser):
 
 
 class TimeStampedModel(models.Model):
-    id = models.UUIDField(primary_key=True, default=uuid.uuid) 
+    id = models.UUIDField(primary_key=True, default=uuid.uuid4) 
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
