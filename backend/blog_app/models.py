@@ -4,7 +4,7 @@ from django.contrib.auth.models import AbstractUser
 from django.utils import timezone
 
 class User(AbstractUser):
-    id = models.UUIDField(primary_key=True, default=uuid.uuid4)
+    uuid = models.UUIDField(primary_key=True, default=uuid.uuid4)
     bio = models.TextField(blank=True, null=True)
     country = models.CharField(blank=True, null=True)
 
